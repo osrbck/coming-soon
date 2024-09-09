@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);;
 }
 
 .clock_content{
@@ -65,24 +65,25 @@
     color: var(--primary-color);
     font-weight: 300;
     margin-bottom: 3rem;
+    padding:0 5px;
 }
 
 
 .flip-clock {
     --fcc-flip-duration: 0.5s; /* transition duration when flip card */
-    --fcc-spacing: 20px; /* space between unit times and separators */
-    --fcc-digit-block-width: 40px; /* width of digit card */
-    --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+    --fcc-spacing: 4px; /* space between unit times and separators */
+    --fcc-digit-block-width: 30px; /* width of digit card */
+    --fcc-digit-block-height: 50px; /* height of digit card, highly recommend in even number */
     --fcc-digit-block-radius: 20px; /* border radius of digit card */
-    --fcc-digit-block-spacing: 5px; /* space between blocks in each unit of time */
-    --fcc-digit-font-size: 30px; /* font size of digit */
+    --fcc-digit-block-spacing: 4px; /* space between blocks in each unit of time */
+    --fcc-digit-font-size: 20px; /* font size of digit */
     --fcc-digit-color: white; /* color of digit */
     --fcc-label-font-size: 10px; /* font size of label */
     --fcc-label-color: #ffffff; /* color of label */
     --fcc-background: #1A3928; /* background of digit card */
     --fcc-divider-color: white; /* color of divider */
     --fcc-divider-height: 1px; /* height of divider */
-    --fcc-separator-size: 6px; /* size of colon */
+    --fcc-separator-size: 4px; /* size of colon */
     --fcc-separator-color: #D98D30; /* color of colon */
   }
 
@@ -110,7 +111,8 @@
     box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
   }
 
-  @media (min-width: 900px) {
+  
+  @media (min-width: 800px) {
     .logo {
         width: 250px;  /* Adjust size as necessary */
         margin-bottom: 5rem;
@@ -131,6 +133,10 @@
     }
 
     .flip-clock{
+      --fcc-spacing: 10px;
+      --fcc-digit-block-spacing: 10px; 
+      --fcc-label-font-size: 20px;
+      --fcc-separator-size: 6px;
         --fcc-digit-block-width: 80px;
         --fcc-digit-block-height: 140px;
         --fcc-digit-font-size: 60px;
