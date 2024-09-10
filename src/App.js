@@ -17,7 +17,7 @@ function App() {
         <h3>Stay tuned for something amazing.</h3>
         <FlipClockCountdown
           className="flip-clock"
-          to={new Date().getTime() + 365 * 24 * 3600 * 1000}  // 365 days in milliseconds
+          to={new Date().getTime() + 301 * 24 * 3600 * 1000}  // 365 days in milliseconds
           labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
           duration={0.5}
         />

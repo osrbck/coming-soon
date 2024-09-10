@@ -22,13 +22,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url('./assets/background.png');
   background-size: cover;
   background-position: center;
-  object-fit: cover;
-  animation: fadeInZoomAndFade 15s ease-in-out infinite; /* 15 seconds duration, looping */
+  overflow: hidden;
+  animation: fadeInZoomAndFade 45s ease-in-out infinite; /* 15 seconds duration, looping */
 }
 
 .logo {
@@ -76,7 +76,7 @@
     --fcc-digit-block-height: 50px; /* height of digit card, highly recommend in even number */
     --fcc-digit-block-radius: 20px; /* border radius of digit card */
     --fcc-digit-block-spacing: 4px; /* space between blocks in each unit of time */
-    --fcc-digit-font-size: 20px; /* font size of digit */
+    --fcc-digit-font-size: 25px; /* font size of digit */
     --fcc-digit-color: white; /* color of digit */
     --fcc-label-font-size: 10px; /* font size of label */
     --fcc-label-color: #ffffff; /* color of label */
@@ -89,7 +89,7 @@
 
 
   .button{
-    margin-top: 10rem;
+    margin-top: 8rem;
     width: 140px;
     height: 45px;
     font-size: 1rem;
