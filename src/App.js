@@ -3,6 +3,7 @@ import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import './App.css';
 import logo from './assets/logo.svg'; // Import your background image
+import Subscribe from './components/Subscribe';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
       {/* Content over the background */}
       <div className="clock_content">
-      <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
         <h1>We are almost there!</h1>
         <h3>Stay tuned for something amazing.</h3>
         <FlipClockCountdown
@@ -21,7 +22,7 @@ function App() {
           labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
           duration={0.5}
         />
-        <button className="button">Notify Me</button>
+        <Subscribe />
       </div>
     </section>
   );

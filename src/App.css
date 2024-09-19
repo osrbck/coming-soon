@@ -2,9 +2,9 @@
 @keyframes fadeInZoomAndFade {
   0% {
     opacity: 0; /* Starting fully transparent */
-    transform: scale(1); /* No zoom initially */
+    transform: scale(1.5); /* No zoom initially */
   }
-  40% {
+  30% {
     opacity: .4; /* Fade in to full visibility */
     transform: scale(1.2); /* Still no zoom */
   }
@@ -28,7 +28,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  animation: fadeInZoomAndFade 45s ease-in-out infinite; /* 15 seconds duration, looping */
+  animation: fadeInZoomAndFade 30s ease-in-out infinite; /* 15 seconds duration, looping */
   background-attachment: scroll;
 }
 
@@ -111,6 +111,97 @@
     transform: translateY(-7px);
     box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
   }
+
+
+
+/* Modal overlay (background) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+/* Input field */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+/* Success message */
+.success-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+/* Modal subscribe button */
+.modal-subscribe-button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.modal-subscribe-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: translateY(-7px);
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  text-decoration: underline;
+}
 
   
   @media (min-width: 800px) {
