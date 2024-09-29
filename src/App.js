@@ -11,13 +11,17 @@ import { FaFigma , FaCode, FaSketch } from 'react-icons/fa';
 
 function App() {
   return (
+    <>
+    <div className='header'>
+        <img src={logo} alt="Logo" className="logo" />
+        <Subscribe />
+    </div>
     <section className="container">
       {/* Background Image */}
       <div className="background"></div>
 
       {/* Content over the background */}
       <div className="clock_content">
-        <img src={logo} alt="Logo" className="logo" />
         <h1>We are almost there!</h1>
         <FlipClockCountdown
           className="flip-clock"
@@ -26,13 +30,14 @@ function App() {
           duration={0.5}
         />
         <div className="card-container">
-          <Card name="Design" icon={<FaFigma size={50} color="#E6D7B3" />} />
-          <Card name="Develop" icon={<FaCode size={50} color="#D98D30" />} />
-          <Card name="Brand" icon={<FaSketch size={50} color="#D96E30" />} />
+          <Card name="Design" icon={<FaFigma size={50} color="white" />} />
+          <Card name="Develop" icon={<FaCode size={50} color="white" />} />
+          <Card name="Brand" icon={<FaSketch size={50} color="white" />} />
         </div>
-        <Subscribe />
       </div>
     </section>
+    </>
+    
   );
 }
 

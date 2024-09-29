@@ -41,7 +41,7 @@ const Subscribe = () => {
   return (
     <div>
       <button onClick={toggleModal} className="button">
-        Notify Me
+        Notify
       </button>
 
       {/* Modal (Conditional rendering) */}
