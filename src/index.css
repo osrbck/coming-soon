@@ -16,8 +16,10 @@ body, html{
 }
 
 :root{
-  --primary-color: #D98D30;
-  --secondary-color: #1A3928;
+  --primary-color:#E6D7B3;
+  --secondary-color:  #D98D30;
+  --tertiary-color:#D96E30;
+  --quaternary-color: #1A3928;
   --white-color: #fff;
 }
 
