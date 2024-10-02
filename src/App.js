@@ -30,9 +30,9 @@ function App() {
           duration={0.5}
         />
         <div className="card-container">
-          <Card name="Design" icon={<FaFigma size={50} color="white" />} />
-          <Card name="Develop" icon={<FaCode size={50} color="white" />} />
-          <Card name="Brand" icon={<FaSketch size={50} color="white" />} />
+          <Card name="Design" icon={<FaFigma size={50} color="#D96E30" />} />
+          <Card name="Develop" icon={<FaCode size={50} color="#E6D7B3" />} />
+          <Card name="Brand" icon={<FaSketch size={50} color="#D98D30" />} />
         </div>
       </div>
     </section>
